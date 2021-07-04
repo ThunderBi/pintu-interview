@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"net/http"
 	"io/ioutil"
-	"strings"
+	"net/http"
 	"strconv"
+	"strings"
 )
 
 func main() {
@@ -16,10 +16,9 @@ func main() {
 	fmt.Print(result)
 }
 
-
 func scanFileByUrl(url string) []int {
 	response, _ := http.Get(url)
-	
+
 	data, _ := ioutil.ReadAll(response.Body)
 
 	var result []int
@@ -44,14 +43,14 @@ func findMaximumProfit(prices []int) int {
 
 func min(value1, value2 int) int {
 	if value1 <= value2 {
-        return value1
-    }
-    return value2
+		return value1
+	}
+	return value2
 }
 
 func max(value1, value2 int) int {
 	if value1 <= value2 {
-        return value2
-    }
-    return value1
+		return value2
+	}
+	return value1
 }
