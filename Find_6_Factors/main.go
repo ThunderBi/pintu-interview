@@ -6,9 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(findFactorExact6(128))
-	fmt.Println(findFactorExact6(1024))
-	fmt.Println(findFactorExact6(16384))
 	fmt.Println(findFactorExact6(262144))
 	fmt.Println(findFactorExact6(134217728))
 }
